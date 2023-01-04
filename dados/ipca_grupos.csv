@@ -1,0 +1,532 @@
+data,variavel,grupo,valor
+2020-01-01,Var. % mensal,Alimentação e bebidas,0.39
+2020-01-01,Var. % mensal,Artigos de residência,-0.07
+2020-01-01,Var. % mensal,Comunicação,0.12
+2020-01-01,Var. % mensal,Despesas pessoais,0.35
+2020-01-01,Var. % mensal,Educação,0.16
+2020-01-01,Var. % mensal,Habitação,0.55
+2020-01-01,Var. % mensal,Saúde e cuidados pessoais,-0.32
+2020-01-01,Var. % mensal,Transportes,0.32
+2020-01-01,Var. % mensal,Vestuário,-0.48
+2020-02-01,Var. % mensal,Alimentação e bebidas,0.11
+2020-02-01,Var. % mensal,Artigos de residência,-0.08
+2020-02-01,Var. % mensal,Comunicação,0.21
+2020-02-01,Var. % mensal,Despesas pessoais,0.31
+2020-02-01,Var. % mensal,Educação,3.7
+2020-02-01,Var. % mensal,Habitação,-0.39
+2020-02-01,Var. % mensal,Saúde e cuidados pessoais,0.73
+2020-02-01,Var. % mensal,Transportes,-0.23
+2020-02-01,Var. % mensal,Vestuário,-0.73
+2020-03-01,Var. % mensal,Alimentação e bebidas,1.13
+2020-03-01,Var. % mensal,Artigos de residência,-1.08
+2020-03-01,Var. % mensal,Comunicação,0.04
+2020-03-01,Var. % mensal,Despesas pessoais,-0.23
+2020-03-01,Var. % mensal,Educação,0.59
+2020-03-01,Var. % mensal,Habitação,0.13
+2020-03-01,Var. % mensal,Saúde e cuidados pessoais,0.21
+2020-03-01,Var. % mensal,Transportes,-0.9
+2020-03-01,Var. % mensal,Vestuário,0.21
+2020-04-01,Var. % mensal,Alimentação e bebidas,1.79
+2020-04-01,Var. % mensal,Artigos de residência,-1.37
+2020-04-01,Var. % mensal,Comunicação,-0.2
+2020-04-01,Var. % mensal,Despesas pessoais,-0.14
+2020-04-01,Var. % mensal,Educação,0.0
+2020-04-01,Var. % mensal,Habitação,-0.1
+2020-04-01,Var. % mensal,Saúde e cuidados pessoais,-0.22
+2020-04-01,Var. % mensal,Transportes,-2.66
+2020-04-01,Var. % mensal,Vestuário,0.1
+2020-05-01,Var. % mensal,Alimentação e bebidas,0.24
+2020-05-01,Var. % mensal,Artigos de residência,0.58
+2020-05-01,Var. % mensal,Comunicação,0.24
+2020-05-01,Var. % mensal,Despesas pessoais,-0.04
+2020-05-01,Var. % mensal,Educação,0.02
+2020-05-01,Var. % mensal,Habitação,-0.25
+2020-05-01,Var. % mensal,Saúde e cuidados pessoais,-0.1
+2020-05-01,Var. % mensal,Transportes,-1.9
+2020-05-01,Var. % mensal,Vestuário,-0.58
+2020-06-01,Var. % mensal,Alimentação e bebidas,0.38
+2020-06-01,Var. % mensal,Artigos de residência,1.3
+2020-06-01,Var. % mensal,Comunicação,0.75
+2020-06-01,Var. % mensal,Despesas pessoais,-0.05
+2020-06-01,Var. % mensal,Educação,0.05
+2020-06-01,Var. % mensal,Habitação,0.04
+2020-06-01,Var. % mensal,Saúde e cuidados pessoais,0.35
+2020-06-01,Var. % mensal,Transportes,0.31
+2020-06-01,Var. % mensal,Vestuário,-0.46
+2020-07-01,Var. % mensal,Alimentação e bebidas,0.01
+2020-07-01,Var. % mensal,Artigos de residência,0.9
+2020-07-01,Var. % mensal,Comunicação,0.51
+2020-07-01,Var. % mensal,Despesas pessoais,-0.11
+2020-07-01,Var. % mensal,Educação,-0.12
+2020-07-01,Var. % mensal,Habitação,0.8
+2020-07-01,Var. % mensal,Saúde e cuidados pessoais,0.44
+2020-07-01,Var. % mensal,Transportes,0.78
+2020-07-01,Var. % mensal,Vestuário,-0.52
+2020-08-01,Var. % mensal,Alimentação e bebidas,0.78
+2020-08-01,Var. % mensal,Artigos de residência,0.56
+2020-08-01,Var. % mensal,Comunicação,0.67
+2020-08-01,Var. % mensal,Despesas pessoais,-0.01
+2020-08-01,Var. % mensal,Educação,-3.47
+2020-08-01,Var. % mensal,Habitação,0.36
+2020-08-01,Var. % mensal,Saúde e cuidados pessoais,0.5
+2020-08-01,Var. % mensal,Transportes,0.82
+2020-08-01,Var. % mensal,Vestuário,-0.78
+2020-09-01,Var. % mensal,Alimentação e bebidas,2.28
+2020-09-01,Var. % mensal,Artigos de residência,1.0
+2020-09-01,Var. % mensal,Comunicação,0.15
+2020-09-01,Var. % mensal,Despesas pessoais,0.09
+2020-09-01,Var. % mensal,Educação,-0.09
+2020-09-01,Var. % mensal,Habitação,0.37
+2020-09-01,Var. % mensal,Saúde e cuidados pessoais,-0.64
+2020-09-01,Var. % mensal,Transportes,0.7
+2020-09-01,Var. % mensal,Vestuário,0.37
+2020-10-01,Var. % mensal,Alimentação e bebidas,1.93
+2020-10-01,Var. % mensal,Artigos de residência,1.53
+2020-10-01,Var. % mensal,Comunicação,0.21
+2020-10-01,Var. % mensal,Despesas pessoais,0.19
+2020-10-01,Var. % mensal,Educação,-0.04
+2020-10-01,Var. % mensal,Habitação,0.36
+2020-10-01,Var. % mensal,Saúde e cuidados pessoais,0.28
+2020-10-01,Var. % mensal,Transportes,1.19
+2020-10-01,Var. % mensal,Vestuário,1.11
+2020-11-01,Var. % mensal,Alimentação e bebidas,2.54
+2020-11-01,Var. % mensal,Artigos de residência,0.86
+2020-11-01,Var. % mensal,Comunicação,0.29
+2020-11-01,Var. % mensal,Despesas pessoais,0.01
+2020-11-01,Var. % mensal,Educação,-0.02
+2020-11-01,Var. % mensal,Habitação,0.44
+2020-11-01,Var. % mensal,Saúde e cuidados pessoais,-0.13
+2020-11-01,Var. % mensal,Transportes,1.33
+2020-11-01,Var. % mensal,Vestuário,0.07
+2020-12-01,Var. % acum. 12m,Alimentação e bebidas,14.09
+2020-12-01,Var. % acum. 12m,Artigos de residência,6.0
+2020-12-01,Var. % acum. 12m,Comunicação,3.42
+2020-12-01,Var. % acum. 12m,Despesas pessoais,1.03
+2020-12-01,Var. % acum. 12m,Educação,1.13
+2020-12-01,Var. % acum. 12m,Habitação,5.25
+2020-12-01,Var. % acum. 12m,Saúde e cuidados pessoais,1.5
+2020-12-01,Var. % acum. 12m,Transportes,1.03
+2020-12-01,Var. % acum. 12m,Vestuário,-1.13
+2020-12-01,Var. % mensal,Alimentação e bebidas,1.74
+2020-12-01,Var. % mensal,Artigos de residência,1.76
+2020-12-01,Var. % mensal,Comunicação,0.39
+2020-12-01,Var. % mensal,Despesas pessoais,0.65
+2020-12-01,Var. % mensal,Educação,0.48
+2020-12-01,Var. % mensal,Habitação,2.88
+2020-12-01,Var. % mensal,Saúde e cuidados pessoais,0.4
+2020-12-01,Var. % mensal,Transportes,1.36
+2020-12-01,Var. % mensal,Vestuário,0.59
+2021-01-01,Var. % acum. 12m,Alimentação e bebidas,14.81
+2021-01-01,Var. % acum. 12m,Artigos de residência,6.98
+2021-01-01,Var. % acum. 12m,Comunicação,3.32
+2021-01-01,Var. % acum. 12m,Despesas pessoais,1.07
+2021-01-01,Var. % acum. 12m,Educação,1.1
+2021-01-01,Var. % acum. 12m,Habitação,3.56
+2021-01-01,Var. % acum. 12m,Saúde e cuidados pessoais,2.15
+2021-01-01,Var. % acum. 12m,Transportes,1.12
+2021-01-01,Var. % acum. 12m,Vestuário,-0.72
+2021-01-01,Var. % mensal,Alimentação e bebidas,1.02
+2021-01-01,Var. % mensal,Artigos de residência,0.86
+2021-01-01,Var. % mensal,Comunicação,0.02
+2021-01-01,Var. % mensal,Despesas pessoais,0.39
+2021-01-01,Var. % mensal,Educação,0.13
+2021-01-01,Var. % mensal,Habitação,-1.07
+2021-01-01,Var. % mensal,Saúde e cuidados pessoais,0.32
+2021-01-01,Var. % mensal,Transportes,0.41
+2021-01-01,Var. % mensal,Vestuário,-0.07
+2021-02-01,Var. % acum. 12m,Alimentação e bebidas,15.0
+2021-02-01,Var. % acum. 12m,Artigos de residência,7.78
+2021-02-01,Var. % acum. 12m,Comunicação,2.98
+2021-02-01,Var. % acum. 12m,Despesas pessoais,0.93
+2021-02-01,Var. % acum. 12m,Educação,-0.09
+2021-02-01,Var. % acum. 12m,Habitação,4.39
+2021-02-01,Var. % acum. 12m,Saúde e cuidados pessoais,2.05
+2021-02-01,Var. % acum. 12m,Transportes,3.66
+2021-02-01,Var. % acum. 12m,Vestuário,0.39
+2021-02-01,Var. % mensal,Alimentação e bebidas,0.27
+2021-02-01,Var. % mensal,Artigos de residência,0.66
+2021-02-01,Var. % mensal,Comunicação,-0.13
+2021-02-01,Var. % mensal,Despesas pessoais,0.17
+2021-02-01,Var. % mensal,Educação,2.48
+2021-02-01,Var. % mensal,Habitação,0.4
+2021-02-01,Var. % mensal,Saúde e cuidados pessoais,0.62
+2021-02-01,Var. % mensal,Transportes,2.28
+2021-02-01,Var. % mensal,Vestuário,0.38
+2021-03-01,Var. % acum. 12m,Alimentação e bebidas,13.87
+2021-03-01,Var. % acum. 12m,Artigos de residência,9.7
+2021-03-01,Var. % acum. 12m,Comunicação,2.86
+2021-03-01,Var. % acum. 12m,Despesas pessoais,1.2
+2021-03-01,Var. % acum. 12m,Educação,-1.19
+2021-03-01,Var. % acum. 12m,Habitação,5.1
+2021-03-01,Var. % acum. 12m,Saúde e cuidados pessoais,1.82
+2021-03-01,Var. % acum. 12m,Transportes,8.58
+2021-03-01,Var. % acum. 12m,Vestuário,0.48
+2021-03-01,Var. % mensal,Alimentação e bebidas,0.13
+2021-03-01,Var. % mensal,Artigos de residência,0.69
+2021-03-01,Var. % mensal,Comunicação,-0.07
+2021-03-01,Var. % mensal,Despesas pessoais,0.04
+2021-03-01,Var. % mensal,Educação,-0.52
+2021-03-01,Var. % mensal,Habitação,0.81
+2021-03-01,Var. % mensal,Saúde e cuidados pessoais,-0.02
+2021-03-01,Var. % mensal,Transportes,3.81
+2021-03-01,Var. % mensal,Vestuário,0.29
+2021-04-01,Var. % acum. 12m,Alimentação e bebidas,12.31
+2021-04-01,Var. % acum. 12m,Artigos de residência,11.85
+2021-04-01,Var. % acum. 12m,Comunicação,3.16
+2021-04-01,Var. % acum. 12m,Despesas pessoais,1.35
+2021-04-01,Var. % acum. 12m,Educação,-1.15
+2021-04-01,Var. % acum. 12m,Habitação,5.43
+2021-04-01,Var. % acum. 12m,Saúde e cuidados pessoais,3.26
+2021-04-01,Var. % acum. 12m,Transportes,11.47
+2021-04-01,Var. % acum. 12m,Vestuário,0.85
+2021-04-01,Var. % mensal,Alimentação e bebidas,0.4
+2021-04-01,Var. % mensal,Artigos de residência,0.57
+2021-04-01,Var. % mensal,Comunicação,0.08
+2021-04-01,Var. % mensal,Despesas pessoais,0.01
+2021-04-01,Var. % mensal,Educação,0.04
+2021-04-01,Var. % mensal,Habitação,0.22
+2021-04-01,Var. % mensal,Saúde e cuidados pessoais,1.19
+2021-04-01,Var. % mensal,Transportes,-0.08
+2021-04-01,Var. % mensal,Vestuário,0.47
+2021-05-01,Var. % acum. 12m,Alimentação e bebidas,12.54
+2021-05-01,Var. % acum. 12m,Artigos de residência,12.59
+2021-05-01,Var. % acum. 12m,Comunicação,3.12
+2021-05-01,Var. % acum. 12m,Despesas pessoais,1.6
+2021-05-01,Var. % acum. 12m,Educação,-1.11
+2021-05-01,Var. % acum. 12m,Habitação,7.58
+2021-05-01,Var. % acum. 12m,Saúde e cuidados pessoais,4.14
+2021-05-01,Var. % acum. 12m,Transportes,14.94
+2021-05-01,Var. % acum. 12m,Vestuário,2.37
+2021-05-01,Var. % mensal,Alimentação e bebidas,0.44
+2021-05-01,Var. % mensal,Artigos de residência,1.25
+2021-05-01,Var. % mensal,Comunicação,0.21
+2021-05-01,Var. % mensal,Despesas pessoais,0.21
+2021-05-01,Var. % mensal,Educação,0.06
+2021-05-01,Var. % mensal,Habitação,1.78
+2021-05-01,Var. % mensal,Saúde e cuidados pessoais,0.76
+2021-05-01,Var. % mensal,Transportes,1.15
+2021-05-01,Var. % mensal,Vestuário,0.92
+2021-06-01,Var. % acum. 12m,Alimentação e bebidas,12.59
+2021-06-01,Var. % acum. 12m,Artigos de residência,12.35
+2021-06-01,Var. % acum. 12m,Comunicação,2.23
+2021-06-01,Var. % acum. 12m,Despesas pessoais,1.94
+2021-06-01,Var. % acum. 12m,Educação,-1.11
+2021-06-01,Var. % acum. 12m,Habitação,8.72
+2021-06-01,Var. % acum. 12m,Saúde e cuidados pessoais,4.31
+2021-06-01,Var. % acum. 12m,Transportes,15.05
+2021-06-01,Var. % acum. 12m,Vestuário,4.09
+2021-06-01,Var. % mensal,Alimentação e bebidas,0.43
+2021-06-01,Var. % mensal,Artigos de residência,1.09
+2021-06-01,Var. % mensal,Comunicação,-0.12
+2021-06-01,Var. % mensal,Despesas pessoais,0.29
+2021-06-01,Var. % mensal,Educação,0.05
+2021-06-01,Var. % mensal,Habitação,1.1
+2021-06-01,Var. % mensal,Saúde e cuidados pessoais,0.51
+2021-06-01,Var. % mensal,Transportes,0.41
+2021-06-01,Var. % mensal,Vestuário,1.21
+2021-07-01,Var. % acum. 12m,Alimentação e bebidas,13.25
+2021-07-01,Var. % acum. 12m,Artigos de residência,12.21
+2021-07-01,Var. % acum. 12m,Comunicação,1.84
+2021-07-01,Var. % acum. 12m,Despesas pessoais,2.52
+2021-07-01,Var. % acum. 12m,Educação,-0.82
+2021-07-01,Var. % acum. 12m,Habitação,11.21
+2021-07-01,Var. % acum. 12m,Saúde e cuidados pessoais,3.18
+2021-07-01,Var. % acum. 12m,Transportes,15.9
+2021-07-01,Var. % acum. 12m,Vestuário,5.19
+2021-07-01,Var. % mensal,Alimentação e bebidas,0.6
+2021-07-01,Var. % mensal,Artigos de residência,0.78
+2021-07-01,Var. % mensal,Comunicação,0.12
+2021-07-01,Var. % mensal,Despesas pessoais,0.45
+2021-07-01,Var. % mensal,Educação,0.18
+2021-07-01,Var. % mensal,Habitação,3.1
+2021-07-01,Var. % mensal,Saúde e cuidados pessoais,-0.65
+2021-07-01,Var. % mensal,Transportes,1.52
+2021-07-01,Var. % mensal,Vestuário,0.53
+2021-08-01,Var. % acum. 12m,Alimentação e bebidas,13.94
+2021-08-01,Var. % acum. 12m,Artigos de residência,12.69
+2021-08-01,Var. % acum. 12m,Comunicação,1.4
+2021-08-01,Var. % acum. 12m,Despesas pessoais,3.18
+2021-08-01,Var. % acum. 12m,Educação,3.03
+2021-08-01,Var. % acum. 12m,Habitação,11.57
+2021-08-01,Var. % acum. 12m,Saúde e cuidados pessoais,2.63
+2021-08-01,Var. % acum. 12m,Transportes,16.63
+2021-08-01,Var. % acum. 12m,Vestuário,7.1
+2021-08-01,Var. % mensal,Alimentação e bebidas,1.39
+2021-08-01,Var. % mensal,Artigos de residência,0.99
+2021-08-01,Var. % mensal,Comunicação,0.23
+2021-08-01,Var. % mensal,Despesas pessoais,0.64
+2021-08-01,Var. % mensal,Educação,0.28
+2021-08-01,Var. % mensal,Habitação,0.68
+2021-08-01,Var. % mensal,Saúde e cuidados pessoais,-0.04
+2021-08-01,Var. % mensal,Transportes,1.46
+2021-08-01,Var. % mensal,Vestuário,1.02
+2021-09-01,Var. % acum. 12m,Alimentação e bebidas,12.54
+2021-09-01,Var. % acum. 12m,Artigos de residência,12.58
+2021-09-01,Var. % acum. 12m,Comunicação,1.31
+2021-09-01,Var. % acum. 12m,Despesas pessoais,3.67
+2021-09-01,Var. % acum. 12m,Educação,3.12
+2021-09-01,Var. % acum. 12m,Habitação,14.0
+2021-09-01,Var. % acum. 12m,Saúde e cuidados pessoais,3.69
+2021-09-01,Var. % acum. 12m,Transportes,17.93
+2021-09-01,Var. % acum. 12m,Vestuário,7.04
+2021-09-01,Var. % mensal,Alimentação e bebidas,1.02
+2021-09-01,Var. % mensal,Artigos de residência,0.9
+2021-09-01,Var. % mensal,Comunicação,0.07
+2021-09-01,Var. % mensal,Despesas pessoais,0.56
+2021-09-01,Var. % mensal,Educação,-0.01
+2021-09-01,Var. % mensal,Habitação,2.56
+2021-09-01,Var. % mensal,Saúde e cuidados pessoais,0.39
+2021-09-01,Var. % mensal,Transportes,1.82
+2021-09-01,Var. % mensal,Vestuário,0.31
+2021-10-01,Var. % acum. 12m,Alimentação e bebidas,11.71
+2021-10-01,Var. % acum. 12m,Artigos de residência,12.3
+2021-10-01,Var. % acum. 12m,Comunicação,1.64
+2021-10-01,Var. % acum. 12m,Despesas pessoais,4.25
+2021-10-01,Var. % acum. 12m,Educação,3.22
+2021-10-01,Var. % acum. 12m,Habitação,14.77
+2021-10-01,Var. % acum. 12m,Saúde e cuidados pessoais,3.8
+2021-10-01,Var. % acum. 12m,Transportes,19.59
+2021-10-01,Var. % acum. 12m,Vestuário,7.77
+2021-10-01,Var. % mensal,Alimentação e bebidas,1.17
+2021-10-01,Var. % mensal,Artigos de residência,1.27
+2021-10-01,Var. % mensal,Comunicação,0.54
+2021-10-01,Var. % mensal,Despesas pessoais,0.75
+2021-10-01,Var. % mensal,Educação,0.06
+2021-10-01,Var. % mensal,Habitação,1.04
+2021-10-01,Var. % mensal,Saúde e cuidados pessoais,0.39
+2021-10-01,Var. % mensal,Transportes,2.62
+2021-10-01,Var. % mensal,Vestuário,1.8
+2021-11-01,Var. % acum. 12m,Alimentação e bebidas,8.9
+2021-11-01,Var. % acum. 12m,Artigos de residência,12.49
+2021-11-01,Var. % acum. 12m,Comunicação,1.44
+2021-11-01,Var. % acum. 12m,Despesas pessoais,4.82
+2021-11-01,Var. % acum. 12m,Educação,3.26
+2021-11-01,Var. % acum. 12m,Habitação,15.45
+2021-11-01,Var. % acum. 12m,Saúde e cuidados pessoais,3.34
+2021-11-01,Var. % acum. 12m,Transportes,21.97
+2021-11-01,Var. % acum. 12m,Vestuário,8.72
+2021-11-01,Var. % mensal,Alimentação e bebidas,-0.04
+2021-11-01,Var. % mensal,Artigos de residência,1.03
+2021-11-01,Var. % mensal,Comunicação,0.09
+2021-11-01,Var. % mensal,Despesas pessoais,0.57
+2021-11-01,Var. % mensal,Educação,0.02
+2021-11-01,Var. % mensal,Habitação,1.03
+2021-11-01,Var. % mensal,Saúde e cuidados pessoais,-0.57
+2021-11-01,Var. % mensal,Transportes,3.35
+2021-11-01,Var. % mensal,Vestuário,0.95
+2021-12-01,Var. % acum. 12m,Alimentação e bebidas,7.94
+2021-12-01,Var. % acum. 12m,Artigos de residência,12.07
+2021-12-01,Var. % acum. 12m,Comunicação,1.38
+2021-12-01,Var. % acum. 12m,Despesas pessoais,4.73
+2021-12-01,Var. % acum. 12m,Educação,2.81
+2021-12-01,Var. % acum. 12m,Habitação,13.05
+2021-12-01,Var. % acum. 12m,Saúde e cuidados pessoais,3.7
+2021-12-01,Var. % acum. 12m,Transportes,21.03
+2021-12-01,Var. % acum. 12m,Vestuário,10.31
+2021-12-01,Var. % mensal,Alimentação e bebidas,0.84
+2021-12-01,Var. % mensal,Artigos de residência,1.37
+2021-12-01,Var. % mensal,Comunicação,0.34
+2021-12-01,Var. % mensal,Despesas pessoais,0.56
+2021-12-01,Var. % mensal,Educação,0.05
+2021-12-01,Var. % mensal,Habitação,0.74
+2021-12-01,Var. % mensal,Saúde e cuidados pessoais,0.75
+2021-12-01,Var. % mensal,Transportes,0.58
+2021-12-01,Var. % mensal,Vestuário,2.06
+2022-01-01,Var. % acum. 12m,Alimentação e bebidas,8.04
+2022-01-01,Var. % acum. 12m,Artigos de residência,13.13
+2022-01-01,Var. % acum. 12m,Comunicação,2.42
+2022-01-01,Var. % acum. 12m,Despesas pessoais,5.14
+2022-01-01,Var. % acum. 12m,Educação,2.94
+2022-01-01,Var. % acum. 12m,Habitação,14.45
+2022-01-01,Var. % acum. 12m,Saúde e cuidados pessoais,3.74
+2022-01-01,Var. % acum. 12m,Transportes,20.41
+2022-01-01,Var. % acum. 12m,Vestuário,11.58
+2022-01-01,Var. % mensal,Alimentação e bebidas,1.11
+2022-01-01,Var. % mensal,Artigos de residência,1.82
+2022-01-01,Var. % mensal,Comunicação,1.05
+2022-01-01,Var. % mensal,Despesas pessoais,0.78
+2022-01-01,Var. % mensal,Educação,0.25
+2022-01-01,Var. % mensal,Habitação,0.16
+2022-01-01,Var. % mensal,Saúde e cuidados pessoais,0.36
+2022-01-01,Var. % mensal,Transportes,-0.11
+2022-01-01,Var. % mensal,Vestuário,1.07
+2022-02-01,Var. % acum. 12m,Alimentação e bebidas,9.12
+2022-02-01,Var. % acum. 12m,Artigos de residência,14.37
+2022-02-01,Var. % acum. 12m,Comunicação,2.85
+2022-02-01,Var. % acum. 12m,Despesas pessoais,5.63
+2022-02-01,Var. % acum. 12m,Educação,6.08
+2022-02-01,Var. % acum. 12m,Habitação,14.61
+2022-02-01,Var. % acum. 12m,Saúde e cuidados pessoais,3.59
+2022-02-01,Var. % acum. 12m,Transportes,18.26
+2022-02-01,Var. % acum. 12m,Vestuário,12.13
+2022-02-01,Var. % mensal,Alimentação e bebidas,1.28
+2022-02-01,Var. % mensal,Artigos de residência,1.76
+2022-02-01,Var. % mensal,Comunicação,0.29
+2022-02-01,Var. % mensal,Despesas pessoais,0.64
+2022-02-01,Var. % mensal,Educação,5.61
+2022-02-01,Var. % mensal,Habitação,0.54
+2022-02-01,Var. % mensal,Saúde e cuidados pessoais,0.47
+2022-02-01,Var. % mensal,Transportes,0.46
+2022-02-01,Var. % mensal,Vestuário,0.88
+2022-03-01,Var. % acum. 12m,Alimentação e bebidas,11.62
+2022-03-01,Var. % acum. 12m,Artigos de residência,14.25
+2022-03-01,Var. % acum. 12m,Comunicação,2.87
+2022-03-01,Var. % acum. 12m,Despesas pessoais,6.21
+2022-03-01,Var. % acum. 12m,Educação,6.8
+2022-03-01,Var. % acum. 12m,Habitação,15.0
+2022-03-01,Var. % acum. 12m,Saúde e cuidados pessoais,4.52
+2022-03-01,Var. % acum. 12m,Transportes,17.37
+2022-03-01,Var. % acum. 12m,Vestuário,13.83
+2022-03-01,Var. % mensal,Alimentação e bebidas,2.42
+2022-03-01,Var. % mensal,Artigos de residência,0.57
+2022-03-01,Var. % mensal,Comunicação,-0.05
+2022-03-01,Var. % mensal,Despesas pessoais,0.59
+2022-03-01,Var. % mensal,Educação,0.15
+2022-03-01,Var. % mensal,Habitação,1.15
+2022-03-01,Var. % mensal,Saúde e cuidados pessoais,0.88
+2022-03-01,Var. % mensal,Transportes,3.02
+2022-03-01,Var. % mensal,Vestuário,1.82
+2022-04-01,Var. % acum. 12m,Alimentação e bebidas,13.47
+2022-04-01,Var. % acum. 12m,Artigos de residência,15.34
+2022-04-01,Var. % acum. 12m,Comunicação,2.87
+2022-04-01,Var. % acum. 12m,Despesas pessoais,6.71
+2022-04-01,Var. % acum. 12m,Educação,6.82
+2022-04-01,Var. % acum. 12m,Habitação,13.44
+2022-04-01,Var. % acum. 12m,Saúde e cuidados pessoais,5.12
+2022-04-01,Var. % acum. 12m,Transportes,19.7
+2022-04-01,Var. % acum. 12m,Vestuário,14.73
+2022-04-01,Var. % mensal,Alimentação e bebidas,2.06
+2022-04-01,Var. % mensal,Artigos de residência,1.53
+2022-04-01,Var. % mensal,Comunicação,0.08
+2022-04-01,Var. % mensal,Despesas pessoais,0.48
+2022-04-01,Var. % mensal,Educação,0.06
+2022-04-01,Var. % mensal,Habitação,-1.14
+2022-04-01,Var. % mensal,Saúde e cuidados pessoais,1.77
+2022-04-01,Var. % mensal,Transportes,1.91
+2022-04-01,Var. % mensal,Vestuário,1.26
+2022-05-01,Var. % acum. 12m,Alimentação e bebidas,13.51
+2022-05-01,Var. % acum. 12m,Artigos de residência,14.68
+2022-05-01,Var. % acum. 12m,Comunicação,3.39
+2022-05-01,Var. % acum. 12m,Despesas pessoais,7.04
+2022-05-01,Var. % acum. 12m,Educação,6.81
+2022-05-01,Var. % acum. 12m,Habitação,9.57
+2022-05-01,Var. % acum. 12m,Saúde e cuidados pessoais,5.38
+2022-05-01,Var. % acum. 12m,Transportes,19.92
+2022-05-01,Var. % acum. 12m,Vestuário,16.08
+2022-05-01,Var. % mensal,Alimentação e bebidas,0.48
+2022-05-01,Var. % mensal,Artigos de residência,0.66
+2022-05-01,Var. % mensal,Comunicação,0.72
+2022-05-01,Var. % mensal,Despesas pessoais,0.52
+2022-05-01,Var. % mensal,Educação,0.04
+2022-05-01,Var. % mensal,Habitação,-1.7
+2022-05-01,Var. % mensal,Saúde e cuidados pessoais,1.01
+2022-05-01,Var. % mensal,Transportes,1.34
+2022-05-01,Var. % mensal,Vestuário,2.11
+2022-06-01,Var. % acum. 12m,Alimentação e bebidas,13.93
+2022-06-01,Var. % acum. 12m,Artigos de residência,14.07
+2022-06-01,Var. % acum. 12m,Comunicação,3.68
+2022-06-01,Var. % acum. 12m,Despesas pessoais,7.26
+2022-06-01,Var. % acum. 12m,Educação,6.85
+2022-06-01,Var. % acum. 12m,Habitação,8.82
+2022-06-01,Var. % acum. 12m,Saúde e cuidados pessoais,6.14
+2022-06-01,Var. % acum. 12m,Transportes,20.12
+2022-06-01,Var. % acum. 12m,Vestuário,16.61
+2022-06-01,Var. % mensal,Alimentação e bebidas,0.8
+2022-06-01,Var. % mensal,Artigos de residência,0.55
+2022-06-01,Var. % mensal,Comunicação,0.16
+2022-06-01,Var. % mensal,Despesas pessoais,0.49
+2022-06-01,Var. % mensal,Educação,0.09
+2022-06-01,Var. % mensal,Habitação,0.41
+2022-06-01,Var. % mensal,Saúde e cuidados pessoais,1.24
+2022-06-01,Var. % mensal,Transportes,0.57
+2022-06-01,Var. % mensal,Vestuário,1.67
+2022-07-01,Var. % acum. 12m,Alimentação e bebidas,14.72
+2022-07-01,Var. % acum. 12m,Artigos de residência,13.32
+2022-07-01,Var. % acum. 12m,Comunicação,3.64
+2022-07-01,Var. % acum. 12m,Despesas pessoais,7.97
+2022-07-01,Var. % acum. 12m,Educação,6.72
+2022-07-01,Var. % acum. 12m,Habitação,4.43
+2022-07-01,Var. % acum. 12m,Saúde e cuidados pessoais,7.36
+2022-07-01,Var. % acum. 12m,Transportes,12.99
+2022-07-01,Var. % acum. 12m,Vestuário,16.67
+2022-07-01,Var. % mensal,Alimentação e bebidas,1.3
+2022-07-01,Var. % mensal,Artigos de residência,0.12
+2022-07-01,Var. % mensal,Comunicação,0.07
+2022-07-01,Var. % mensal,Despesas pessoais,1.13
+2022-07-01,Var. % mensal,Educação,0.06
+2022-07-01,Var. % mensal,Habitação,-1.05
+2022-07-01,Var. % mensal,Saúde e cuidados pessoais,0.49
+2022-07-01,Var. % mensal,Transportes,-4.51
+2022-07-01,Var. % mensal,Vestuário,0.58
+2022-08-01,Var. % acum. 12m,Alimentação e bebidas,13.43
+2022-08-01,Var. % acum. 12m,Artigos de residência,12.67
+2022-08-01,Var. % acum. 12m,Comunicação,2.26
+2022-08-01,Var. % acum. 12m,Despesas pessoais,7.87
+2022-08-01,Var. % acum. 12m,Educação,7.08
+2022-08-01,Var. % acum. 12m,Habitação,3.83
+2022-08-01,Var. % acum. 12m,Saúde e cuidados pessoais,8.8
+2022-08-01,Var. % acum. 12m,Transportes,7.62
+2022-08-01,Var. % acum. 12m,Vestuário,17.44
+2022-08-01,Var. % mensal,Alimentação e bebidas,0.24
+2022-08-01,Var. % mensal,Artigos de residência,0.42
+2022-08-01,Var. % mensal,Comunicação,-1.1
+2022-08-01,Var. % mensal,Despesas pessoais,0.54
+2022-08-01,Var. % mensal,Educação,0.61
+2022-08-01,Var. % mensal,Habitação,0.1
+2022-08-01,Var. % mensal,Saúde e cuidados pessoais,1.31
+2022-08-01,Var. % mensal,Transportes,-3.37
+2022-08-01,Var. % mensal,Vestuário,1.69
+2022-09-01,Var. % acum. 12m,Alimentação e bebidas,11.71
+2022-09-01,Var. % acum. 12m,Artigos de residência,11.52
+2022-09-01,Var. % acum. 12m,Comunicação,0.07
+2022-09-01,Var. % acum. 12m,Despesas pessoais,8.29
+2022-09-01,Var. % acum. 12m,Educação,7.21
+2022-09-01,Var. % acum. 12m,Habitação,1.84
+2022-09-01,Var. % acum. 12m,Saúde e cuidados pessoais,9.0
+2022-09-01,Var. % acum. 12m,Transportes,3.6
+2022-09-01,Var. % acum. 12m,Vestuário,19.16
+2022-09-01,Var. % mensal,Alimentação e bebidas,-0.51
+2022-09-01,Var. % mensal,Artigos de residência,-0.13
+2022-09-01,Var. % mensal,Comunicação,-2.08
+2022-09-01,Var. % mensal,Despesas pessoais,0.95
+2022-09-01,Var. % mensal,Educação,0.12
+2022-09-01,Var. % mensal,Habitação,0.6
+2022-09-01,Var. % mensal,Saúde e cuidados pessoais,0.57
+2022-09-01,Var. % mensal,Transportes,-1.98
+2022-09-01,Var. % mensal,Vestuário,1.77
+2022-10-01,Var. % acum. 12m,Alimentação e bebidas,11.21
+2022-10-01,Var. % acum. 12m,Artigos de residência,10.55
+2022-10-01,Var. % acum. 12m,Comunicação,-0.95
+2022-10-01,Var. % acum. 12m,Despesas pessoais,8.1
+2022-10-01,Var. % acum. 12m,Educação,7.34
+2022-10-01,Var. % acum. 12m,Habitação,1.14
+2022-10-01,Var. % acum. 12m,Saúde e cuidados pessoais,9.84
+2022-10-01,Var. % acum. 12m,Transportes,1.55
+2022-10-01,Var. % acum. 12m,Vestuário,18.48
+2022-10-01,Var. % mensal,Alimentação e bebidas,0.72
+2022-10-01,Var. % mensal,Artigos de residência,0.39
+2022-10-01,Var. % mensal,Comunicação,-0.48
+2022-10-01,Var. % mensal,Despesas pessoais,0.57
+2022-10-01,Var. % mensal,Educação,0.18
+2022-10-01,Var. % mensal,Habitação,0.34
+2022-10-01,Var. % mensal,Saúde e cuidados pessoais,1.16
+2022-10-01,Var. % mensal,Transportes,0.58
+2022-10-01,Var. % mensal,Vestuário,1.22
+2022-11-01,Var. % acum. 12m,Alimentação e bebidas,11.84
+2022-11-01,Var. % acum. 12m,Artigos de residência,8.68
+2022-11-01,Var. % acum. 12m,Comunicação,-1.17
+2022-11-01,Var. % acum. 12m,Despesas pessoais,7.71
+2022-11-01,Var. % acum. 12m,Educação,7.34
+2022-11-01,Var. % acum. 12m,Habitação,0.61
+2022-11-01,Var. % acum. 12m,Saúde e cuidados pessoais,10.49
+2022-11-01,Var. % acum. 12m,Transportes,-0.93
+2022-11-01,Var. % acum. 12m,Vestuário,18.65
+2022-11-01,Var. % mensal,Alimentação e bebidas,0.53
+2022-11-01,Var. % mensal,Artigos de residência,-0.68
+2022-11-01,Var. % mensal,Comunicação,-0.14
+2022-11-01,Var. % mensal,Despesas pessoais,0.21
+2022-11-01,Var. % mensal,Educação,0.02
+2022-11-01,Var. % mensal,Habitação,0.51
+2022-11-01,Var. % mensal,Saúde e cuidados pessoais,0.02
+2022-11-01,Var. % mensal,Transportes,0.83
+2022-11-01,Var. % mensal,Vestuário,1.1
