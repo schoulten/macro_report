@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "macro-report"
+version = "0.0.1"
+description = "Macroeconomic Report"
+authors = ["Fernando da Silva <fernando@fortietwo.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "macro_report"}]
+
+[tool.poetry.dependencies]
+python = "3.9.12"
+pandas = "^1.5.2"
+pathlib = "^1.0.1"
+sidrapy = "^0.1.4"
+python-bcb = "^0.1.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
