@@ -4,11 +4,11 @@
 
 # Importa bibliotecas
 import pandas as pd
-# from bcb import sgs
-# import pathlib
-import urllib3
-from urllib3.util.ssl_ import create_urllib3_context
-import json
+from bcb import sgs
+import pathlib
+# import urllib3
+# from urllib3.util.ssl_ import create_urllib3_context
+# import json
 import sidrapy as sidra
 
 
@@ -16,21 +16,21 @@ import sidrapy as sidra
 
 
 # IPCA cheio (% a.m / acum. 12m, IBGE)
-def get_sidra(url):
-  
-  ctx = create_urllib3_context()
-  ctx.load_default_certs()
-  ctx.options |= 0x4
-  
-  with urllib3.PoolManager(ssl_context = ctx) as http:
-    r = http.request("GET", url)
-  
-  return pd.DataFrame(json.loads(r.data.decode("utf-8")))
-
-dados_brutos_ipca_cheio = get_sidra(
-  url = "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/63,2265/p/all/d/v63%20" +
-  "2,v2265%202"
-  )
+# def get_sidra(url):
+#   
+#   ctx = create_urllib3_context()
+#   ctx.load_default_certs()
+#   ctx.options |= 0x4
+#   
+#   with urllib3.PoolManager(ssl_context = ctx) as http:
+#     r = http.request("GET", url)
+#   
+#   return pd.DataFrame(json.loads(r.data.decode("utf-8")))
+# 
+# dados_brutos_ipca_cheio = get_sidra(
+#   url = "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/63,2265/p/all/d/v63%20" +
+#   "2,v2265%202"
+#   )
 
 dados_brutos_ipca_cheio = sidra.get_table(
     table_code = "1737", 
