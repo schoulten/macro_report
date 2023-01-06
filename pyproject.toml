@@ -10,7 +10,6 @@ packages = [{include = "macro_report"}]
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
 urllib3 = "^1.26.13"
-json = "^2.0.9"
 pandas = "^1.3.5"
 sidrapy = "^0.1.4"
 
