@@ -4,10 +4,11 @@
 
 # Importa bibliotecas
 import pandas as pd
-from bcb import sgs
-import pathlib
+# from bcb import sgs
+# import pathlib
 from urllib3.util.ssl_ import create_urllib3_context
 import json
+import sidrapy as sidra
 
 
 """# Extração de dados"""
@@ -23,7 +24,7 @@ def get_sidra(url):
   with urllib3.PoolManager(ssl_context = ctx) as http:
     r = http.request("GET", url)
   
-  return pd.DataFrame(json.loads(r.data.decode("utf-8"))
+  return pd.DataFrame(json.loads(r.data.decode("utf-8")))
 
 dados_brutos_ipca_cheio = get_sidra(
   url = "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/63,2265/p/all/d/v63%20" +
