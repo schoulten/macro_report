@@ -40,7 +40,9 @@ jobs:
       #   shell: Rscript {0}
 
       - name: Python code
-        run: poetry run python Python/etl.py
+        run: |
+          poetry config virtualenvs.prefer-active-python true
+          poetry run python Python/etl.py
 
       # - name: Setup Quarto
       #   uses: quarto-dev/quarto-actions/setup@v2
