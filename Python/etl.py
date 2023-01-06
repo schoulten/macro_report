@@ -211,6 +211,6 @@ dados = {
 
 
 # Loop para salvar arquivos CSV
-pathlib.Path("dados").mkdir(exist_ok = True)
+pathlib.Path("data").mkdir(exist_ok = True)
 for tabela in list(dados.keys()):
-  dados[tabela].to_csv(path_or_buf = "dados/" + tabela + ".csv", index = False)
+  dados[tabela].to_csv(path_or_buf = "data/" + tabela + ".csv", index = False)
