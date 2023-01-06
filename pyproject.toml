@@ -9,9 +9,6 @@ packages = [{include = "macro_report"}]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-pandas = "^1.5.2"
-pathlib = "^1.0.1"
-python-bcb = "^0.1.8"
 sidrapy = "^0.1.4"
 
 
