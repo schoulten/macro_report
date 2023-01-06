@@ -23,10 +23,7 @@ jobs:
       - name: Install {nucleos} R package
         run: |
           if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
-          remotes::install_github(
-            repo = "analisemacropro/nucleos",
-            auth_token = Sys.getenv("NUCLEOS_TOKEN")
-            )
+          remotes::install_github(repo = "analisemacropro/nucleos", auth_token = Sys.getenv("NUCLEOS_TOKEN"))
       - name: Install R packages
         uses: r-lib/actions/setup-renv@v2
 
