@@ -6,6 +6,7 @@
 import pandas as pd
 # from bcb import sgs
 # import pathlib
+import urllib3
 from urllib3.util.ssl_ import create_urllib3_context
 import json
 import sidrapy as sidra
