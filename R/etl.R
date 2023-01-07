@@ -17,6 +17,13 @@ library(readr)
 # Extração de dados -------------------------------------------------------
 
 # IPCA subitens (% a.m. e peso, IBGE)
+url_sidra <- paste0(
+  "https://apisidra.ibge.gov.br/values/t/7060/n1/all/v/63,66/p/all/c315/7173/",
+  "d/v63%202,v66%204"
+  )
+dados_sidra <- httr2::request(url_sidra) |>
+  httr2::req_perform() |>
+  httr2::resp_body_json(simplifyDataFrame = TRUE)
 dados_brutos_ipca_subitens <- purrr::map(
   .x = c("IPCA - Variacao mensal (%)" = 63, "IPCA - Peso mensal" = 66),
   .f = ~sidrar::get_sidra(
