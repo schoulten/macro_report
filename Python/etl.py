@@ -189,12 +189,13 @@ dados_ipca_subitens = (
     )
   .assign(
       data = lambda x: pd.to_datetime(x.data, format = "%Y%m"),
-      snipc = lambda x: x.descricao.str.count("\d"),
+      snipc = lambda x: x.descricao.str.count(r"\d"),
       grupo = lambda x: np.where(x.snipc == 7, "Subitem", "outro"),
       subitem = lambda x: x.descricao.str.slice(start = 8),
       valor = lambda x: x.valor.astype(float)
     )
   .query("grupo == 'Subitem'")
+  .filter(items = ["data", "variavel", "subitem", "valor"])
 )
 
 
@@ -258,7 +259,7 @@ dados = {
   "difusao": dados_difusao,
   "ipca_cheio": dados_ipca_cheio,
   "ipca_grupos": dados_ipca_grupos,
-  "ipca_subitems": dados_ipca_subitens,
+  "ipca_subitens": dados_ipca_subitens,
   "meta": dados_meta,
   "nucleos": dados_nucleos,
   "expectativas": dados_expectativas
