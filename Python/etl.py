@@ -191,11 +191,12 @@ dados_ipca_subitens = (
       data = lambda x: pd.to_datetime(x.data, format = "%Y%m"),
       snipc = lambda x: x.descricao.str.count(r"\d"),
       grupo = lambda x: np.where(x.snipc == 7, "Subitem", "outro"),
+      codigo = lambda x: x.descricao.str.slice(stop = 7),
       subitem = lambda x: x.descricao.str.slice(start = 8),
       valor = lambda x: x.valor.astype(float)
     )
   .query("grupo == 'Subitem'")
-  .filter(items = ["data", "variavel", "subitem", "valor"])
+  .filter(items = ["data", "variavel", "subitem", "codigo", "valor"])
 )
 
 
