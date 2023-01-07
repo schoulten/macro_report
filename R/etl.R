@@ -5,9 +5,10 @@
 # Pacotes -----------------------------------------------------------------
 
 # Carregar pacotes
-library(nucleos) # https://analisemacropro.github.io/nucleos/
+library(purrr)
+library(sidrar)
 library(dplyr)
-library(tidyr)
+library(lubridate)
 library(stringr)
 library(readr)
 
@@ -16,7 +17,14 @@ library(readr)
 # Extração de dados -------------------------------------------------------
 
 # IPCA subitens (% a.m. e peso, IBGE)
-dados_brutos_ipca_subitens <- nucleos::get_ipca(table = 7060)
+dados_brutos_ipca_subitens <- purrr::map(
+  .x = c("IPCA - Variacao mensal (%)" = 63, "IPCA - Peso mensal" = 66),
+  .f = ~sidrar::get_sidra(
+    x        = 7060,
+    variable = .x,
+    period   = "all"
+    )
+  )
 
 
 
@@ -24,25 +32,29 @@ dados_brutos_ipca_subitens <- nucleos::get_ipca(table = 7060)
 
 # IPCA subitens (% a.m. e peso, IBGE)
 dados_ipca_subitens <- dados_brutos_ipca_subitens |>
-  nucleos::group_desc() |>
-  dplyr::filter(group == "Subitem", date == max(date)) |>
-  tidyr::pivot_longer(
-    cols      = c("pct_change", "weight"),
-    names_to  = "var",
-    values_to = "val"
-    ) |>
+  dplyr::bind_rows(.id = "variavel") |>
   dplyr::mutate(
-    data = date,
+    data = lubridate::ym(`Mês (Código)`),
     variavel = dplyr::case_when(
-      var == "pct_change" ~ "Var. % mensal",
-      var == "weight" ~ "Peso",
+      variavel == "IPCA - Variacao mensal (%)" ~ "Var. % mensal",
+      variavel == "IPCA - Peso mensal" ~ "Peso",
       TRUE ~ NA_character_
       ),
-    subitem = stringr::str_sub(string = desc, start = 9, end = -1),
-    subitem_codigo = code,
-    valor = val,
+    descricao = `Geral, grupo, subgrupo, item e subitem`,
+    snipc = stringr::str_count(`Geral, grupo, subgrupo, item e subitem`, "\\d"),
+    grupo = dplyr::case_when(
+      snipc == 0 ~ "Geral",
+      snipc == 1 ~ "Grupo",
+      snipc == 2 ~ "Subgrupo",
+      snipc == 4 ~ "Item",
+      snipc == 7 ~ "Subitem"
+      ),
+    subitem = stringr::str_sub(string = descricao, start = 9, end = -1),
+    valor = Valor,
     .keep = "none"
-    )
+    ) |>
+  dplyr::filter(grupo == "Subitem", data == max(data)) |>
+  dplyr::as_tibble()
 
 
 
