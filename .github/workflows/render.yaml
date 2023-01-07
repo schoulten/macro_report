@@ -34,15 +34,16 @@ jobs:
       - name: Install Python packages
         run: poetry install --no-root
 
-      # - name: R code
-      #   run: |
-      #     source("R/etl.R")
-      #   shell: Rscript {0}
-
       - name: Python code
         run: |
           poetry config virtualenvs.prefer-active-python true
           poetry run python Python/etl.py
+
+      - name: R code
+        run: |
+          source("R/load_data.R")
+          source("R/inline_data.R")
+        shell: Rscript {0}
 
       # - name: Setup Quarto
       #   uses: quarto-dev/quarto-actions/setup@v2
