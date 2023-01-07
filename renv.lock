@@ -8,11 +8,6 @@
       }
     ]
   },
-  "Python": {
-    "Version": "3.7.12",
-    "Type": "conda",
-    "Name": "macroreport"
-  },
   "Packages": {
     "renv": {
       "Package": "renv",
