@@ -8,9 +8,6 @@ jobs:
   Render:
     runs-on: ubuntu-22.04
 
-    env:
-      NUCLEOS_TOKEN: ${{ secrets.NUCLEOS_KEY }}
-
     steps:
       - uses: actions/checkout@v3
 
@@ -36,10 +33,10 @@ jobs:
       - name: Install Python packages
         run: poetry install --no-root
 
-      - name: R code
-        run: |
-          source("R/etl.R")
-        shell: Rscript {0}
+      # - name: R code
+      #   run: |
+      #     source("R/etl.R")
+      #   shell: Rscript {0}
 
       - name: Python code
         run: |

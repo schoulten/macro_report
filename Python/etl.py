@@ -4,6 +4,7 @@
 
 # Importa bibliotecas
 import pandas as pd
+import numpy as np
 import pathlib
 import sidrapy as sidra
 from bcb import sgs
@@ -22,6 +23,7 @@ dados_brutos_ipca_cheio = sidra.get_table(
     period = "all"
     )
 
+
 # IPCA grupos (% a.m. / acum. 12m, IBGE)
 dados_brutos_ipca_grupos = sidra.get_table(
     table_code = "7060", 
@@ -33,6 +35,26 @@ dados_brutos_ipca_grupos = sidra.get_table(
         "315": "7170,7445,7486,7558,7625,7660,7712,7766,7786"
         }
     )
+
+
+# IPCA subitens (% a.m. e peso, IBGE)
+dados_brutos_ipca_subitens = pd.concat(
+  list(
+    map(
+      lambda x: (
+        sidra.get_table(
+          table_code = "7060", 
+          territorial_level = "1", 
+          ibge_territorial_code = "all", 
+          variable = x, 
+          period = "last",
+          classifications = {"315": "allxt"}
+          )
+        ),
+      ["63", "66"]
+      )
+    )
+)
 
 
 # IPCA núcleos (% a.m., BCB)
@@ -144,6 +166,39 @@ dados_ipca_grupos = (
 )
 
 
+# IPCA subitens (% a.m. e peso, IBGE)
+dados_ipca_subitens = (
+  dados_brutos_ipca_subitens
+  .rename(columns = dados_brutos_ipca_subitens.iloc[0])
+  .rename(columns = {
+      "Mês (Código)": "data", 
+      "Valor": "valor",
+      "Variável": "variavel",
+      "Geral, grupo, subgrupo, item e subitem": "descricao"
+      }
+    )
+  .filter(items = ["data", "variavel", "descricao", "valor"], axis = "columns")
+  .query("valor not in ['Valor', '...']")
+  .replace(
+      to_replace = {
+          "variavel": {
+              "IPCA - Variação mensal": "Var. % mensal",
+              "IPCA - Peso mensal": "Peso"
+              }
+            }
+    )
+  .assign(
+      data = lambda x: pd.to_datetime(x.data, format = "%Y%m"),
+      snipc = lambda x: x.descricao.str.count("\d"),
+      grupo = lambda x: np.where(x.snipc == 7, "Subitem", "outro"),
+      subitem = lambda x: x.descricao.str.slice(start = 8),
+      valor = lambda x: x.valor.astype(float)
+    )
+  .query("grupo == 'Subitem'")
+)
+
+
+
 # IPCA núcleos (% a.m., BCB)
 dados_nucleos = (
     dados_brutos_nucleos
@@ -203,6 +258,7 @@ dados = {
   "difusao": dados_difusao,
   "ipca_cheio": dados_ipca_cheio,
   "ipca_grupos": dados_ipca_grupos,
+  "ipca_subitems": dados_ipca_subitens,
   "meta": dados_meta,
   "nucleos": dados_nucleos,
   "expectativas": dados_expectativas
