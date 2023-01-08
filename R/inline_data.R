@@ -63,7 +63,21 @@ headline_ritmo_12m <- dados$ipca_cheio |>
   dplyr::slice_tail(n = 1)
 
 
-# 3º destaque: valor positivo/negativo e texto
+# 3º destaque: valor e texto
+headline_nucleos <- dados$nucleos |>
+  dplyr::arrange(data) |>
+  dplyr::filter(variavel == "Média dos núcleos") |>
+  dplyr::slice_tail(n = 2) |>
+  dplyr::mutate(
+    texto = dplyr::case_when(
+      valor > 0 ~ "acelerou",
+      valor == 0 ~ "se estabilizou em",
+      valor < 0 ~ "desacelerou"
+      )
+    )
+
+
+# 4º destaque: valor positivo/negativo e texto
 headline_subitem <- dados$ipca_subitens |>
   tidyr::pivot_wider(
     id_cols     = c("data", "subitem", "codigo"),
@@ -75,7 +89,25 @@ headline_subitem <- dados$ipca_subitens |>
   dplyr::arrange(dplyr::desc(`Var. % mensal`))
 
 
-# 4º destaque: valor e texto
+# 5º destaque: valor e texto
+headline_difusao <- dados$difusao |>
+  dplyr::mutate(
+    media = mean(x = difusao, na.rm = TRUE),
+    sinal = sign(difference(difusao)),
+    texto1 = dplyr::case_when(
+      sinal == 1 ~ "avançou para",
+      sinal == 0 ~ "está estável em",
+      sinal == -1 ~ "retrocedeu para"
+      ),
+    texto2 = dplyr::case_when(
+      difusao > media ~ "acima da",
+      difusao == media ~ "em linha com a",
+      difusao < media ~ "abaixo da"
+      )
+    ) |>
+  dplyr::filter(data == max(data))
+
+# 6º destaque: valor e texto
 headline_meta <- dados$meta |>
   dplyr::filter(
     lubridate::year(data) == dados$expectativas$DataReferencia,
