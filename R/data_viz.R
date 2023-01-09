@@ -2,6 +2,7 @@
 # Code to generate utility objects for data visualizations
 
 
+
 # Chart colors
 colors_42 <- c(
   "#282f6b", "#b22200", "#eace3f", "#224f20", "#5f487c", "#b35c1e", "#419391",
