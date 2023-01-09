@@ -50,10 +50,10 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render Quarto doc
-        run: quarto render report/index.qmd
-
-      - name: Save output
-        run: mv report/index.html ./
+        run: |
+          cp -a ./report/. ./
+          quarto render index.qmd
+          rm -rf report contents resources index.qmd
 
       - name: Commit & Push
         uses: stefanzweifel/git-auto-commit-action@v4
