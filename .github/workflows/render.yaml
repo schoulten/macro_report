@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Checkout repo
+      - name: Checkout this repo
         uses: actions/checkout@v3
 
-      - name: Clone my private repo
+      - name: Checkout private repo
         uses: actions/checkout@v3
         with:
           repository: schoulten/macro_report_priv
@@ -45,14 +45,6 @@ jobs:
         run: |
           poetry config virtualenvs.prefer-active-python true
           poetry run python Python/etl.py
-
-      - name: R code
-        run: |
-          source("R/load_data.R")
-          source("R/utils.R")
-          source("R/data_viz.R")
-          source("R/inline_data.R")
-        shell: Rscript {0}
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
