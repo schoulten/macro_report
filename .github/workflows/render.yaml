@@ -51,7 +51,7 @@ jobs:
 
       - name: Render Quarto doc
         run: |
-          cp -f ./report/. ./
+          cp -r report/* ./
           quarto render index.qmd
           rm -rf report contents resources index.qmd
 
