@@ -1,8 +1,10 @@
 
 # Código para carregar dados em CSV
 
+
 #  Lista de arquivos
 arquivos_csv <- list.files(path = "data", full.names = TRUE)
+
 
 # Loop para ler CSVs
 dados <- purrr::map(
