@@ -42,6 +42,8 @@ jobs:
       - name: R code
         run: |
           source("R/load_data.R")
+          source("R/utils.R")
+          source("R/data_viz.R")
           source("R/inline_data.R")
         shell: Rscript {0}
 
@@ -49,7 +51,7 @@ jobs:
       #   uses: quarto-dev/quarto-actions/setup@v2
       #
       # - name: Render Quarto doc
-      #   run: quarto render test.qmd
+      #   run: quarto render index.qmd
 
       - name: Commit & Push
         uses: stefanzweifel/git-auto-commit-action@v4
