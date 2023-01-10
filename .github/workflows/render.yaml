@@ -49,6 +49,11 @@ jobs:
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Set locale
+      run: |
+          sudo locale-gen pt_BR.UTF-8
+          sudo update-locale LANG=pt_BR.UTF-8
+
       - name: Render Quarto doc
         run: |
           cp -r report/* ./
