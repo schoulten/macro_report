@@ -50,7 +50,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Set locale
-      run: |
+        run: |
           sudo locale-gen pt_BR.UTF-8
           sudo update-locale LANG=pt_BR.UTF-8
 
@@ -59,6 +59,7 @@ jobs:
           cp -r report/* ./
           quarto render index.qmd
           rm -rf report contents resources index.qmd
+          mv index.html docs
 
       - name: Commit & Push
         uses: stefanzweifel/git-auto-commit-action@v4
