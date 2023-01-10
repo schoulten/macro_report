@@ -66,7 +66,7 @@ jobs:
         run: |
           cp -r report/* ./
           quarto render index.qmd
-          rm -rf report contents resources index.qmd
+          rm -rf report contents resources index.qmd macro_report_priv.Rproj
           mv index.html docs
 
       - name: Create PDF doc
