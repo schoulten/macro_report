@@ -5,6 +5,7 @@ on:
     - cron: '5 8-10 * * 1-5'
   repository_dispatch:
     types: [quarto_update]
+  workflow_dispatch:
 
 name: Render Quarto doc
 
