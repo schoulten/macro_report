@@ -3,6 +3,8 @@ on:
     branches: [main, master]
   schedule:
     - cron: '5 8-10 * * 1-5'
+  repository_dispatch:
+    types: [quarto_update]
 
 name: Render Quarto doc
 
