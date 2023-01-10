@@ -64,6 +64,11 @@ jobs:
           rm -rf report contents resources index.qmd
           mv index.html docs
 
+      - name: Create PDF doc
+        run: |
+          if (!require("pagedown")) {install.packages("pagedown")}
+          pagedown::chrome_print(input = "docs/index.html", format = "pdf", options = list(paperWidth = 11, paperHeight = 11))
+
       - name: Commit & Push
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
