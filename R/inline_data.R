@@ -162,15 +162,14 @@ grupos_sinal <- grupos_mensal |>
       n > 1 & n != dplyr::n_distinct(grupos_mensal$grupo) ~ paste0(
         n, " grupos tiveram variação mensal positiva em ",
         formatar_data(grupos_max$data[1]),
-        " com destaque para o grupo ",
+        ", com destaque para o grupo ",
         grupos_max$grupo[2], " que subiu ",
         formatar_num(grupos_max$valor[2]), "%"
         ),
       n == dplyr::n_distinct(grupos_mensal$grupo) ~ paste0(
-        "todos tiveram variação mensal positiva em ",
+        "todos os grupos tiveram variação mensal positiva em ",
         formatar_data(grupos_mensal$data[1]),
-        " com destaque para o grupo ", formatar_num(grupos_max$valor[2]),
-        grupos_max$grupo[2], " que subiu ",
+        ", com destaque para o grupo ", grupos_max$grupo[2], " que subiu ",
         formatar_num(grupos_max$valor[2]), "%"
         ),
       n == 1 ~ paste0(
