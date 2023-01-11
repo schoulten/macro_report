@@ -2,7 +2,7 @@ on:
   push:
     branches: [main, master]
   schedule:
-    - cron: '5 8-10 * * 1-5'
+    - cron: '5 5-7 * * 1-5'
   repository_dispatch:
     types: [quarto_update]
   workflow_dispatch:
