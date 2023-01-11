@@ -106,7 +106,8 @@ headline_difusao <- dados$difusao |>
       difusao < media ~ "abaixo da"
       )
     ) |>
-  dplyr::filter(data == max(data))
+  dplyr::arrange(data) |>
+  dplyr::slice_tail(n = 2)
 
 
 # 6º destaque: valor e texto
@@ -140,6 +141,7 @@ grupos_mensal <- dados$ipca_grupos |>
 # Variação mais positiva/negativa
 grupos_max <- grupos_mensal |>
   dplyr::filter(valor %in% c(max(valor), min(valor))) |>
+  dplyr::arrange(valor) |>
   dplyr::mutate(
     grupo = stringr::str_to_lower(grupo, locale = "pt"),
     sinal = sign(valor),
@@ -154,18 +156,25 @@ grupos_max <- grupos_mensal |>
 # Contagem de grupos por sinal de variação mensal
 grupos_sinal <- grupos_mensal |>
   dplyr::count(sinal = sign(valor)) |>
-  dplyr::arrange(sinal) |>
+  dplyr::arrange(dplyr::desc(sinal)) |>
   dplyr::mutate(
     texto = dplyr::case_when(
-      n > 1 ~ paste0(
+      n > 1 & n != dplyr::n_distinct(grupos_mensal$grupo) ~ paste0(
         n, " grupos tiveram variação mensal positiva em ",
         formatar_data(grupos_max$data[1]),
         " com destaque para o grupo ",
         grupos_max$grupo[2], " que subiu ",
         formatar_num(grupos_max$valor[2]), "%"
         ),
+      n == dplyr::n_distinct(grupos_mensal$grupo) ~ paste0(
+        "todos tiveram variação mensal positiva em ",
+        formatar_data(grupos_mensal$data[1]),
+        " com destaque para o grupo ", formatar_num(grupos_max$valor[2]),
+        grupos_max$grupo[2], " que subiu ",
+        formatar_num(grupos_max$valor[2]), "%"
+        ),
       n == 1 ~ paste0(
-        n, " grupo teve variação mensal positiva em ",
+        "apenas ", n, " grupo teve variação mensal positiva em ",
         formatar_data(grupos_mensal$data[1]),
         " com aumento de ", formatar_num(grupos_max$valor[2]),
         "% (", grupos_max$grupo[2], ")"
