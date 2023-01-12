@@ -78,6 +78,3 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Data ETL and report update
-          commit_user_name: Fernando da Silva
-          commit_user_email: fernando.schoulten@hotmail.com
-          commit_author: Fernnado da Silva <fernando.schoulten@hotmail.com>
