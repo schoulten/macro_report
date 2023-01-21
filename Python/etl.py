@@ -246,7 +246,8 @@ dados_meta = (
 # Expectativas anuais de inflação (IPCA, % no ano, Focus/BCB)
 dados_expectativas = (
     dados_brutos_expectativas
-    .query("DataReferencia == @dados_ipca_cheio.data.dt.year.max() and Data == Data.max()")
+    .query("DataReferencia == @dados_ipca_cheio.data.dt.year.max()")
+    .query("Data == Data.max()")
 )
 
 
