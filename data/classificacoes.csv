@@ -3617,7 +3617,13 @@ data,variavel,valor
 2023-08-01,Não-duráveis,-0.8
 2023-08-01,Semi-duráveis,0.41
 2023-08-01,Serviços,0.08
+2023-09-01,Alimentos,-1.02
+2023-09-01,Comercializáveis,-0.32
 2023-09-01,Duráveis,-0.22
+2023-09-01,Industriais,-0.19
+2023-09-01,Livres,-0.04
+2023-09-01,Monitorados,1.11
 2023-09-01,Não comercializáveis,0.18
 2023-09-01,Não-duráveis,-0.83
 2023-09-01,Semi-duráveis,0.15
+2023-09-01,Serviços,0.5
