@@ -96,33 +96,34 @@ codigos = {
     "DP": 16122,
     "P55": 28750
 }
-for serie codigos.items():
-  coleta_bcb_sgs()
+for serie in codigos.items():
+  dados_brutos_nucleos.append(coleta_bcb_sgs(serie[1], serie[0]))
 
 
 # IPCA difusão (%, BCB)
-dados_brutos_difusao = sgs.get(codes = {"difusao": 21379})
+dados_brutos_difusao = coleta_bcb_sgs(21379, "difusao")
 
 
 # IPCA classificações (% a.m., BCB)
-dados_brutos_classificacoes = sgs.get(
-    codes = {
-        "Livres": 11428,
-        "Alimentos": 27864,
-        "Serviços": 10844,
-        "Industriais": 27863,
-        "Duráveis": 10843,
-        "Semi-duráveis": 10842,
-        "Não-duráveis": 10841,
-        "Monitorados": 4449,
-        "Comercializáveis": 4447,
-        "Não comercializáveis": 4448
-        }
-    )
+dados_brutos_classificacoes = []
+codigos = {
+    "Livres": 11428,
+    "Alimentos": 27864,
+    "Serviços": 10844,
+    "Industriais": 27863,
+    "Duráveis": 10843,
+    "Semi-duráveis": 10842,
+    "Não-duráveis": 10841,
+    "Monitorados": 4449,
+    "Comercializáveis": 4447,
+    "Não comercializáveis": 4448
+    }
+for serie in codigos.items():
+  dados_brutos_classificacoes.append(coleta_bcb_sgs(serie[1], serie[0]))
 
 
 # Meta de inflação (% anual, CMN)
-dados_brutos_meta = sgs.get(codes = {"meta": 13521})
+dados_brutos_meta = coleta_bcb_sgs(13521, "meta")
 
 
 # Expectativas anuais de inflação (IPCA, % no ano, Focus/BCB)
@@ -234,24 +235,24 @@ dados_ipca_subitens = (
 
 # IPCA núcleos (% a.m., BCB)
 dados_nucleos = (
-    dados_brutos_nucleos
+    dados_brutos_nucleos[0]
+    .join(other = dados_brutos_nucleos[1:], how = "outer")
     .assign(**{"Média dos núcleos": lambda x: x.mean(axis = 1, skipna = True)})
     .reset_index()
-    .rename(columns = {"Date": "data"})
     .melt(id_vars = "data", var_name = "variavel", value_name = "valor")
     .sort_values(["data", "variavel"])
 )
 
 
 # IPCA difusão (%, BCB)
-dados_difusao = dados_brutos_difusao.reset_index().rename(columns = {"Date": "data"})
+dados_difusao = dados_brutos_difusao.reset_index()
 
 
 # IPCA classificações (% a.m., BCB)
 dados_classificacoes = (
-    dados_brutos_classificacoes
+    dados_brutos_classificacoes[0]
+    .join(other = dados_brutos_classificacoes[1:], how = "outer")
     .reset_index()
-    .rename(columns = {"Date": "data"})
     .melt(id_vars = "data", var_name = "variavel", value_name = "valor")
     .sort_values(["data", "variavel"])
     .dropna()
@@ -263,7 +264,6 @@ dados_meta = (
     pd.concat([dados_brutos_meta] * 12)
     .sort_index()
     .reset_index()
-    .rename(columns = {"Date": "data"})
     .assign(
         data = lambda x: pd.date_range(
             start = x.data.min(), 
