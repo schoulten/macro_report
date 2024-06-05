@@ -7,7 +7,37 @@ import pandas as pd
 import numpy as np
 import pathlib
 import sidrapy as sidra
-from bcb import sgs
+
+
+
+"""# Funções"""
+
+
+# Coleta dados da API do Banco Central (SGS)
+def coleta_bcb_sgs(
+  codigo,
+  nome, 
+  data_inicio = "01/01/2000", 
+  data_fim = (pd.to_datetime("today") + pd.offsets.DateOffset(months = 36)).strftime("%d/%m/%Y")
+  ):
+
+  url = (
+    f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{codigo}/dados?" +
+    f"formato=csv&dataInicial={data_inicio}&dataFinal={data_fim}"
+    )
+
+  try:
+    print(f"Coletando a série {codigo} ({nome})")
+    resposta = pd.read_csv(filepath_or_buffer = url, sep = ";", decimal = ",")
+  except:
+    raise Exception(f"Falha na coleta da série {codigo} ({nome})")
+  else:
+    return (
+        resposta
+        .rename(columns = {"valor": nome})
+        .assign(data = lambda x: pd.to_datetime(x.data, format = "%d/%m/%Y"))
+        .set_index("data")
+    )
 
 
 
@@ -58,15 +88,16 @@ dados_brutos_ipca_subitens = pd.concat(
 
 
 # IPCA núcleos (% a.m., BCB)
-dados_brutos_nucleos = sgs.get(
-    codes = {
-        "EX0": 11427,
-        "EX3": 27839,
-        "MS": 4466,
-        "DP": 16122,
-        "P55": 28750
-        }
-    )
+dados_brutos_nucleos = []
+codigos = {
+    "EX0": 11427,
+    "EX3": 27839,
+    "MS": 4466,
+    "DP": 16122,
+    "P55": 28750
+}
+for serie codigos.items():
+  coleta_bcb_sgs()
 
 
 # IPCA difusão (%, BCB)
